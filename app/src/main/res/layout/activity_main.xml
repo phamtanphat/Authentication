@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittextEmail"
+        android:hint="Nhap email"
+        android:textSize="@dimen/_18ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/edittextEmail"
+        android:id="@+id/edittextPassword"
+        android:hint="Nhap password"
+        android:textSize="@dimen/_18ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonDangky"
+        android:layout_below="@id/edittextPassword"
+        android:text="Dang ky"
+        android:textSize="@dimen/_20ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonDangnhap"
+        android:layout_below="@id/edittextPassword"
+        android:layout_toRightOf="@id/buttonDangky"
+        android:text="Dang nhap"
+        android:textSize="@dimen/_20ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="@dimen/_20ssp"
+        android:id="@+id/edittextXacthucemail"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:hint="Nhap email xac thuc"
+        android:layout_below="@id/buttonDangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonGuiemailxacthuc"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edittextXacthucemail"
+        android:textSize="@dimen/_20ssp"
+        android:text="Gui email xac thuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonResetPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonGuiemailxacthuc"
+        android:textSize="@dimen/_20ssp"
+        android:text="Reset password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
